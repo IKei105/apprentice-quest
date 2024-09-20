@@ -7,6 +7,10 @@ readonly PASSWORD=2
 echo "パスワードマネージャーへようこそ！"
 echo "公開鍵として登録したメールアドレスを入力してください。"
 read mail_address
+while [ -z "$mail_address" ]; do
+  echo -n "メールアドレスを入力してください："
+  read mail_address
+done
 
 while true
 do
