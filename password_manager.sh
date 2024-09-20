@@ -19,7 +19,7 @@ do
 
   if [ "${input}" = "Add Password" ]; then
     echo -n "サービス名を入力してください："
-      read service_name
+    read service_name
     while [ -z "$service_name" ]; do
       echo -n "サービス名を正しく入力してください："
       read service_name
